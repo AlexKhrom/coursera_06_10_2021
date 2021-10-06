@@ -1,1 +1,105 @@
+* {
+    box-sizing: border-box;
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
 
+nav {
+    background-color: #0E566C;
+    height: 110%;
+}
+
+nav div {
+    /*display: table;*/
+    height: 200px;
+    border-radius: 5px;
+    margin-right: 0;
+    width: 50%;
+    text-align: center;
+    padding-top: 70px;
+}
+
+
+nav div a {
+    font-size: 20px;
+    color: wheat;
+    text-align: center;
+    display: block;
+}
+
+nav div:first-child {
+    background-color: #0e8c8c;
+    color: yellow;
+}
+
+nav div:nth-child(2) {
+    background-color: #0d71bb;
+    color: white;
+}
+
+nav div:last-child {
+    background-color: #00B5AD;
+    color: dimgrey;
+}
+
+@media (max-width: 552px) {
+    nav div {
+        color: grey;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media (min-width: 552px) and (max-width: 778px) {
+    nav div {
+        color: grey;
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 778px) and (max-width: 992px) {
+    nav{
+        padding-bottom: 20px;
+    }
+    nav div {
+        color: grey;
+        width: 45%;
+        display: inline-block;
+        margin-top: 30px;
+    }
+
+    nav div:first-child {
+        margin-left: 20px;
+    }
+
+    nav div:nth-child(2) {
+        float: right;
+        margin-right: 20px;
+    }
+
+    nav div:last-child {
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        /*margin-top: -30px;*/
+    }
+}
+
+@media screen and (min-width: 993px) {
+    nav div {
+        color: grey;
+        padding-top: 50px;
+        width: 33.33%;
+        display: inline-block;
+    }
+    nav div:first-child {
+        float: left;
+    }
+    nav div:last-child {
+        float: right;
+    }
+}
